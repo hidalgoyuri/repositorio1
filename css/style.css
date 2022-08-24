@@ -1,0 +1,446 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+/* Fondo de página web y fuente Roboto */
+
+body{
+    background-image: url("../media/background-1.jpg");
+    font-family: roboto, sans serif;
+}
+
+/* ----------------------------------------------------------HEADER--------------------------------------------------------------------  */
+/* Comandos para el Logo de página */
+
+.logo{
+    font-family: gelasio, serif;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+.enlace-logo{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+/* Navegador principal del sitio web */
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Barra de menú del sitio web */
+
+header{
+    background-color: #003459;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    min-height: 40px;
+    z-index: 3;
+}
+
+/* ----------------------------------------------------------PÁGINA INDEX--------------------------------------------------------------------  */
+
+/* Grid */
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "banner-inicio"
+                         "margin-section";
+
+}
+
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+    
+    
+    .card{
+
+            width: 30%;
+            height: 50px;
+            margin: auto;
+    
+        }
+}
+
+/* banner y título de página index */
+.banner-inicio{
+    background-image: url("../media/construccion-2.jpg");
+    background-size: cover;
+    padding-top: 70px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    grid-area: banner-inicio;
+    align-items: center;
+}
+
+.texto-banner-inicio{
+    justify-content: center;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    
+}
+
+/* boton */
+.button{
+    grid-area: button;
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #F34F36;
+    color: white;
+    border-color: #F34F36;
+    margin-top: 2rem;
+    justify-self: center;
+
+}
+
+/* SEGUNDA SECCIÓN DE INDEX: margen de título del index */
+
+.seccion2{
+    grid-area: seccion2;
+    padding-bottom: 2rem;
+}
+
+.seccion2-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "card1 card2 card3"
+                         "button button button";
+}
+
+.card{
+    background-color: white;
+    color:#00506b;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bbbbbb;
+    border-radius: 20px;
+
+}
+
+.card1{
+    grid-area: card1;
+    background-color: #b6bfb6;
+}
+
+.card2{
+    grid-area: card2;
+    background-color: #00AAE2;
+}
+
+.card3{
+    grid-area: card3;
+    background-color: #b6bfb6;
+}
+
+.margin-section{
+    margin-top: 40px;
+    grid-area: margin-section;
+}
+
+/* ----------------------------------------------------------PÁGINA NOSOTROS--------------------------------------------------------------------  */
+.nosotros-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 100px 150px;
+    grid-template-areas: "banner-nosotros"
+                         "texto-nosotros1"
+                         "texto-nosotros2";
+}
+
+
+
+/* banner y título de página nosotros */
+.banner-nosotros{
+    background-image: url("../media/mineria-1.jpg");
+    background-size: cover;
+    padding-top: 70px;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    grid-area: banner-nosotros;
+    align-items: center;
+}
+
+.texto-banner-nosotros{
+   justify-content: center;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+.texto-nosotros1{
+    grid-area: texto-nosotros1;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.texto-nosotros2{
+    grid-area: texto-nosotros2;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+
+/* margen para texto de página Nosotros */
+.texto-nosotros {
+    margin: 100px;
+}
+
+
+/* ----------------------------------------------------------PÁGINA PRODUCTOS--------------------------------------------------------------------  */
+
+.grilla-productos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 35vh 45vh 25vh 60vh;
+    grid-template-areas: "banner-productos"
+                         "texto-prod-1"
+                         "img-productos"
+                         "texto-prod-3"
+                         "tabla-productos";
+}
+
+/* banner y título de página productos */
+.banner-productos{
+    background-image: url("../media/ingeniero-1.jpg");
+    background-size: cover;
+    padding-top: 70px;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    grid-area: banner-productos;
+    align-items: center;
+}
+
+.texto-banner-productos{
+    justify-content: center;
+    color: white;
+    font-size: 4em;
+    
+    
+}
+
+/* boton */
+.button-1{
+    grid-area: button;
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #F34F36;
+    color: white;
+    border-color: #F34F36;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+
+.h3-1{
+    margin: 20px;
+}
+
+.h3-2, .h3-3, .li{
+    margin: 20px;
+}
+
+/* margen para h3, texto de página productos y lista */
+.texto-productos{
+    margin: 20px;
+    grid-area: texto-productos;
+}
+
+.texto-prod-1, .texto-prod-2, .texto-prod-3{
+    grid-area: texto-prod-1 texto-prod-2 texto-prod-3;
+
+}
+
+
+/* margen para tabla de página productos */
+.tabla-productos .img-productos {
+    margin: 20px;
+    grid-area: tabla-productos;
+    
+
+    
+}
+
+.img-productos {
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    grid-area: img-productos;
+    align-content: center;
+    
+}
+
+/* ----------------------------------------------------------PÁGINA BLOG--------------------------------------------------------------------  */
+
+
+.grilla-blog{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40vh 60vh;
+    grid-template-areas: "banner-blog"
+                         "text-blog"
+                         "img-blog"
+                        
+}
+
+/* banner y título de página blog */
+.banner-blog{
+    background-image: url("../media/construcción-1.jpg");
+    background-size: cover;
+    padding-top: 70px;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    grid-area: banner-blog;
+    align-items: center;
+}
+
+.texto-banner-blog{
+    position: absolute;
+    color: white;
+    font-size: 4em;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.button-2{
+    grid-area: button;
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #F34F36;
+    color: white;
+    border-color: #F34F36;
+    margin-top: 9rem;
+    justify-self: center;
+}
+
+.text-blog, h3{
+    margin: 20px;
+    grid-area: text-blog;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.img-blog{
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: img-blog;
+
+
+}
+
+/* ----------------------------------------------------------PÁGINA CONTACTO--------------------------------------------------------------------  */
+
+/* Grid */
+
+.grilla-grilla-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 100vh;
+    grid-template-areas: "banner-contacto"
+                         "formulario-contacto"
+                        
+}
+
+/* banner y título de página contacto */
+.banner-contacto{
+    background-image: url("../media/mineria-3.jpg");
+    background-size: cover;
+    padding-top: 70px;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    grid-area: banner-contacto;
+    align-items: center;
+}
+
+.texto-banner-contacto{
+    justify-content: center;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+
+/* margen formulario de página contacto */
+.formulario-contacto{
+    margin: 20px;
+}
+
+/* -----------------------------------------------------------------FOOTER--------------------------------------------------------------------  */
+
+
+/* barra azul del footer */
+footer{
+    background-color: #00171F;
+    padding: 5px;
+}
+
+
+/* color de texto y alineado del footer */
+footer p{
+    color: white;
+    text-align: center;
+}
+
+
+/* hipervinculos de redes sociales - footer */
+footer ul li{
+    color: white;
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+

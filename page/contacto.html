@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes de la página web: Roboto y Gelasio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600&family=Roboto:ital,wght@0,100;0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <a class="enlace-logo" href="./../index.html"> <h1 class="logo">COMERCIAL INDUSTRIAL HIDALGO</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>    
+
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>    
+
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>    
+
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>    
+
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>    
+
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="grilla-contacto">
+        
+        <section class="banner-contacto">
+            <h3 class="texto-banner-contacto">CONTÁCTANOS</h3>
+            <button class="button">Solicite una cotización</button>
+        </section>
+
+        <section>
+
+        <form class="formulario-contacto" method="POST"  >
+            <label for="nombre">Nombre(s)</label>
+            <input id="nombre" name="nombre" placeholder="ingrese su nombre" />
+            <br>
+            <label for="apellido">Apellido(s)</label>
+            <input id="apellido" name="apellido" placeholder="ingrese su apellido" />
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@mail.com"/>
+            <br>
+            <label for="Contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" />
+            
+            <br><br>
+
+            <fieldset>
+                <legend>Estado civil</legend>
+                <div>
+                    <label for="estado_civil">Indique estado civil</label>
+                    <select name="estado_civil" id="estado_civil">
+                        <option value="soltero">Soltero/a</option>
+                        <option value="casado">Casado/a</option>
+                        <option value="divorciado">Divorciado/a</option>
+                        <option value="viudo">Viudo/a</option>
+                    </select>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+
+            <legend>Sector económico en el que trabaja</legend>
+            <label for="Agricultura">Agricultura, ganadería, pesca
+                <input type="checkbox" id="Agricultura" name="Agricultura" value="Agricultura"/>
+            </label>
+            <label for="minería">Minería
+                <input type="checkbox" id="minería" name="minería" value="minería"/>
+            </label>
+            <label for="manufactura">Manufactura (bienes de consumo, de capital,...)
+                <input type="checkbox" id="manufactura" name="manufactura" value="manufactura"/>
+            </label>
+            <label for="construcción">Construcción
+                <input type="checkbox" id="construcción" name="construcción" value="construcción"/>
+            </label>
+            <label for="comercio">Comercio
+                <input type="checkbox" id="comercio" name="comercio" value="comercio"/>
+            </label>
+            <label for="no_personales">Servicios no personales (electricidad, gas, agua, transporte,...)
+                <input type="checkbox" id="no_personales" name="no_personales" value="no_personales"/>
+            </label>
+            <label for="serv_personales">Servicios personales (Hotelería, restaurantes,...)
+                <input type="checkbox" id="serv_personales" name="serv_personales" value="serv_personales"/>
+            </label>
+            <label for="hogares">Hogares
+                <input type="checkbox" id="hogares" name="hogares" value="hogares"/>
+            </label>
+            <label for="otro">Otro
+                <input type="checkbox" id="otro" name="otro" value="otro"/>
+            </label>
+
+            </fieldset>
+
+            <br><br>
+            <label for="newsletter">¿Desea recibir el Newsletter?
+                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter"/>
+            </label>
+
+            <br><br>
+        <label for="comentarios">Comentarios</label>
+        <br>
+        <textarea cols="50" rows="10" id="comentarios" name="Comentarios" 
+        placeholder="Ingrese comentarios..."></textarea>
+        <br>
+        <button type="reset">Limpiar datos</button>
+        <button type="submit">Cargar</button>
+
+        </form>
+
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <ul>
+            <li><a target="_blank" href="https://facebook.com"><img src="./../media/iconos/facebook.png" width="35px" alt="facebook"></a></li>
+            <li><a target="_blank" href="https://instagram.com"><img src="./../media/iconos/instagram.png" width="35px" alt="instagram"></a></li>
+            <li><a target="_blank" href="https://linkedin.com"><img src="./../media/iconos/linkedin.png" width="35px" alt="linkedin"></a></li>
+            <li><a target="_blank" href="https://youtube.com"><img src="./../media/iconos/youtube.png" width="35px" alt="youtube"></a></li>
+
+        </ul>
+
+        <p>&copy; 2022 || Yuri Hidalgo || Diseñado para Coderhouse </p>
+    </footer>
+
+</body>
+</html>
